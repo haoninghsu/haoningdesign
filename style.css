@@ -27,7 +27,7 @@ header p {
 }
 
 .container {
-  margin: 0px;
+  margin: auto;
   align-items: flex-start;
   display: flex;
   min-height: 100%;
@@ -38,22 +38,70 @@ header p {
 .recommendation {
   margin: 0px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 24px;
   grid-row-gap: 24px;
-  max-width: 1200px;
-  width: 1200px;
+  max-width: 768px;
+  width: 720px;
+}
+.recommend-content {
+  left: 0;
+  padding: 20px;
+  position: absolute;
+  top: 0;
 }
 
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
+.recommend-content {
+  color: #fcfaf2;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+}
+
+.recommend-name {
+  color: #fcfaf2;
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(189, 192, 186, 0.5);
+  line-height: 1.2;
+  word-spacing: 100vw;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+}
+
+@media (min-width: 769px) {
+  .container {
+    width: 750px;
+  }
+  .recommendation {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    max-width: 750px;
+    width: 750px;
   }
 }
 
-@media (min-width: 960px) {
-  .card-grid {
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+  .recommendation {
+    margin: 0px;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    max-width: 960px;
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
   }
 }
 
@@ -89,29 +137,4 @@ header p {
 
 .card:hover .recommend-img {
   transform: scale(1.05) translateZ(0);
-}
-
-.recommend-content {
-  left: 0;
-  padding: 20px;
-  position: absolute;
-  top: 0;
-}
-
-.recommend-content {
-  color: #fcfaf2;
-  font-size: 0.9rem;
-  margin-bottom: 8px;
-  font-family: "Nunito", sans-serif;
-  font-weight: 300;
-}
-
-.recommend-name {
-  color: #fcfaf2;
-  font-size: 1.9rem;
-  text-shadow: 2px 2px 20px rgba(189, 192, 186, 0.5);
-  line-height: 1.2;
-  word-spacing: 100vw;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
 }
