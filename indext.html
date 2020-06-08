@@ -5,73 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>What a Fluff ☁️</title>
     <link
-      href="https://fonts.googleapis.com/css?family=Nunito+Sans|Raleway"
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Nunito:wght@200;300;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+        <!-- Bootstrap v4.4.1 CSS stylesheet -->
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+      />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
+      <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand col-8" href="#">What a Fluff ☁️</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link"
+                href="#"
+                tabindex="-1"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+              class="nav-link"
+              href="#"
+                tabindex="-1"
+          
+                >Map</a
+              >
+            </li>
+        </div>
+  </nav>
       <h1>Find a Fluff</h1>
       <p>Explore and find a fluffy animal you like the best!</p>
 
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-      </ul>
     </header>
 
     <main>
-      <div class="container">
-        <ul class="recommendation">
-          <li>
-            <div class="recommend-img">
-              <img src="image/samoyed.jpg" alt="A picture of Samoyed" />
+      <section class="container">
+        <div class="recommendation">
+          <a class="card" href="#">
+              <div class="recommend-img" style="background-image:url(image/samoyed.jpg);">
+              </div>
+              <div class="recommend-content">
+                <h3 class = "recommend-name">Samoyed</h3>
+                <p class = "recommend-descr">The land cloud</p>
             </div>
-            <div class="recommend-descr">
-              <h2>Samoyed</h2>
-              <p>The land cloud</p>
-            </div>
-          </li>
+            </a>
 
-          <li>
-            <div class="recommend-img">
-              <img
-                src="image/redpanda-unsplash.jpg"
-                alt="A picture of red panda"
-              />
+            <a class="card" href="#">
+              <div class="recommend-img" style="background-image:url(image/redpanda-unsplash.jpg);">
+              </div>
+              <div class="recommend-content">
+                <h3 class = "recommend-name">Red Panda</h3>
+                <p class = "recommend-descr">Not racoon</p>
             </div>
-            <div class="recommend-descr">
-              <h2>Red Panda</h2>
-              <p>Not racoon</p>
-            </div>
-          </li>
+            </a>
 
-          <li>
-            <div class="recommend-img">
-              <img src="image/quokka.jpg" alt="A picture of Quokka" />
+            <a class="card" href="#">
+              <div class="recommend-img" style="background-image:url(image/quokka.jpg);">
+              </div>
+              <div class="recommend-content">
+                <h3 class = "recommend-name">Quokka</h3>
+                <p class = "recommend-descr">The happiest animal on the world</p>
             </div>
-            <div class="recommend-descr">
-              <h2>Quokka</h2>
-              <p>The happiest animal on the world</p>
-            </div>
-          </li>
+            </a>
 
-          <li>
-            <div class="recommend-img">
-              <img src="image/sea-otter.jpg" alt="A picture of Sea Otter " />
+            <a class="card" href="#">
+              <div class="recommend-img" style="background-image:url(image/sea-otter-2.jpg);">
+              </div>
+              <div class="recommend-content">
+                <h3 class = "recommend-name">Sea Otter</h3>
+                <p class = "recommend-descr">Not so fluffy but still adorable</p>
             </div>
-            <div class="recommend-descr">
-              <h2>Sea Otter</h2>
-              <p>Not so fluffy but still adorable</p>
-            </div>
-          </li>
-        </ul>
-      </div>
+            </a>
+        </div>
+        </section>
+      </section>
     </main>
   </body>
   >
