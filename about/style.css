@@ -5,7 +5,7 @@
 
 .referenceS {
   padding-top: 1rem;
-  padding-left: 3rem;
+  padding-left: 4rem;
   padding-bottom: 3rem;
   width: 50%;
 }
@@ -92,6 +92,98 @@ footer {
   font-family: "Concert One", cursive;
   font-size: 22px;
   color: #434343;
+}
+
+.about {
+  display: flex;
+  flex-direction: flex-start;
+}
+
+/*graphs*/
+.animal {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 0 0 100px inset, 0 0 0 5px;
+  transition: box-shadow 1s;
+  float: left;
+  margin: 10px;
+}
+
+.animal::after {
+  width: 80%;
+  height: 80%;
+  display: block;
+  font-size: 15pt;
+  color: #fcfaf2;
+  border: 2px solid;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* hover out transition */
+  transition: opacity 1s 0.5s;
+}
+
+/*reveal photos*/
+.animal:hover {
+  box-shadow: 0 0 0 5px inset, 0 0 5px grey, 0 0 10px grey inset;
+  transition: box-shadow 1s;
+}
+
+/*hide names*/
+.animal:hover::after {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#panda {
+  background-image: url("../image/Panda.jpg");
+  color: rgba(87, 76, 87, 0.8);
+}
+
+#panda::after {
+  content: "Panda";
+}
+
+#arcticFox {
+  background-image: url("../image/Arcticfox.jpg");
+  color: rgba(46, 92, 110, 0.8);
+}
+
+#arcticFox::after {
+  content: "Arctic Fox";
+}
+
+#leopard {
+  background-image: url("../image/Leopard.jpg");
+  color: rgba(134, 120, 53, 0.8);
+}
+
+#leopard::after {
+  content: "Leopard";
+}
+
+#racoon {
+  background-image: url("../image/racoon.jpg");
+  color: rgba(9, 97, 72, 0.8);
+}
+
+#racoon::after {
+  content: "Racoon";
+}
+.wrapper {
+  width: 450px;
+  height: 450px;
+  padding-top: 80px;
+  padding-right: 50px;
+  margin: auto;
 }
 
 @media (min-width: 769px) {
