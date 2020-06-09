@@ -3,12 +3,31 @@
   width: 50%;
 }
 
-hr {
+.referenceS {
+  padding-top: 1rem;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  width: 50%;
+}
+
+.intro hr {
   width: 50px;
   text-align: left;
   margin-left: 0;
   background-color: #eb7a77;
   height: 2px;
+}
+
+.reference hr {
+  width: 50px;
+  text-align: left;
+  margin-left: 0;
+  background-color: #313131;
+  height: 0.5px;
+}
+
+.reference {
+  background-color: #fcfaf2;
 }
 
 h1 {
@@ -42,6 +61,7 @@ footer {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   text-align: center;
+  background-color: #fcfaf2;
 }
 
 .nav-item {
