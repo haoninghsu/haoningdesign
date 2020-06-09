@@ -10,6 +10,24 @@
   width: 50%;
 }
 
+.reference h2 {
+  font-size: 14px;
+}
+
+.reference ul {
+  font-size: 11px;
+}
+
+.reference a:link {
+  color: #434343;
+  font-size: 11px;
+}
+
+.reference a:visited {
+  color: #999595;
+  font-size: 11px;
+}
+
 .intro hr {
   width: 50px;
   text-align: left;
