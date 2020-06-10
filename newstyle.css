@@ -14,6 +14,27 @@ header p {
   padding-top: 10px;
 }
 
+.filters {
+  display: flex;
+  flex-direction: flex-start;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.form-control {
+  font-size: 10px;
+  color: #434343;
+  font-family: "Nunito", sans-serif;
+}
+
+.filter {
+  padding: 3px;
+}
+.search {
+  padding: 3px;
+}
+
 footer {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
@@ -111,6 +132,9 @@ footer {
     max-width: 750px;
     width: 750px;
   }
+  .form-control {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -125,6 +149,9 @@ footer {
     grid-row-gap: 24px;
     max-width: 960px;
     width: 960px;
+  }
+  .form-control {
+    font-size: 14px;
   }
 }
 
