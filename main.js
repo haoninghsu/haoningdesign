@@ -180,6 +180,24 @@ var arr = [
     "five",
     "temperate",
   ],
+  [
+    `guinea pigs`,
+    "brown",
+    `<a class="card" href="https://www.instagram.com/albertwalter_theguineapigs/">
+  <div class="recommend-img" style="background-image:url(image/guineapig.jpg);">
+  </div>
+  <div class="recommend-content">
+    <h3 class = "recommend-name">Guinea Pigs</h3>
+    <p class = "recommend-descr">Not pigs nor are they from Guinea</p>
+  </div>
+  <div class = "insta">
+  <img class="ins-icon" src="image/instagram-sketched.svg">
+  <h6 class = "ins"> Recommended Instagram account </h6>
+  </div> 
+  </a>`,
+    "three",
+    "temperate",
+  ],
 ];
 
 buildAllCards(arr);
