@@ -92,6 +92,8 @@ var arr = [
   ],
 ];
 
+buildAllCards(arr);
+
 function buildOneCard(child, div) {
   let a = document.createElement("a");
   a.innerHTML = child;
