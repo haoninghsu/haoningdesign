@@ -91,7 +91,7 @@ var arr = [
     "tropical",
   ],
   [
-    `Malamute`,
+    `malamute`,
     "black",
     `<a class="card" href="https://www.instagram.com/dubs_uw/">
   <div class="recommend-img" style="background-image:url(image/Malamute.jpg);">
@@ -107,6 +107,78 @@ var arr = [
   </a>`,
     "three",
     "frigid",
+  ],
+  [
+    `wallaby`,
+    "gray",
+    `<a class="card" href="https://www.instagram.com/brunyislandau/">
+  <div class="recommend-img" style="background-image:url(image/wallaby.jpg);">
+  </div>
+  <div class="recommend-content">
+    <h3 class = "recommend-name">Wallaby</h3>
+    <p class = "recommend-descr">Cuter than kangaroo. Australia native!</p>
+  </div>
+  <div class = "insta">
+  <img class="ins-icon" src="image/instagram-sketched.svg">
+  <h6 class = "ins"> Recommended Instagram account </h6>
+  </div> 
+  </a>`,
+    "one",
+    "temperate",
+  ],
+  [
+    `panda`,
+    "black",
+    `<a class="card" href="https://www.instagram.com/panda_loversworld/">
+  <div class="recommend-img" style="background-image:url(image/panda1.jpg);">
+  </div>
+  <div class="recommend-content">
+    <h3 class = "recommend-name">Panda</h3>
+    <p class = "recommend-descr">Panda, panda, panda, panda!</p>
+  </div>
+  <div class = "insta">
+  <img class="ins-icon" src="image/instagram-sketched.svg">
+  <h6 class = "ins"> Recommended Instagram account </h6>
+  </div> 
+  </a>`,
+    "five",
+    "temperate",
+  ],
+  [
+    `meerkat`,
+    "brown",
+    `<a class="card" href="https://www.instagram.com/meerkat_suricatta/">
+  <div class="recommend-img" style="background-image:url(image/meerkat.jpg);">
+  </div>
+  <div class="recommend-content">
+    <h3 class = "recommend-name">Meerkat</h3>
+    <p class = "recommend-descr">Hakuna matata! What a wonderful phrase! </p>
+  </div>
+  <div class = "insta">
+  <img class="ins-icon" src="image/instagram-sketched.svg">
+  <h6 class = "ins"> Recommended Instagram account </h6>
+  </div> 
+  </a>`,
+    "one",
+    "tropical",
+  ],
+  [
+    `racoon`,
+    "gray",
+    `<a class="card" href="https://www.instagram.com/pumpkintheraccoon/">
+  <div class="recommend-img" style="background-image:url(image/racoon-unsplash.jpg);">
+  </div>
+  <div class="recommend-content">
+    <h3 class = "recommend-name">Racoon</h3>
+    <p class = "recommend-descr">They have the cleanest hands</p>
+  </div>
+  <div class = "insta">
+  <img class="ins-icon" src="image/instagram-sketched.svg">
+  <h6 class = "ins"> Recommended Instagram account </h6>
+  </div> 
+  </a>`,
+    "five",
+    "temperate",
   ],
 ];
 
