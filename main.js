@@ -1,13 +1,7 @@
-function buildOneCard(child) {
-  let div = document.getElementById("cards");
-  let a = document.createElement("a");
-  a.innerHTML = child;
-
-  div.appendChild(a);
-}
-
 var arr = [
-  `<a class="card" href="https://www.instagram.com/mayapolarbear/">
+  [
+    `samoyed`,
+    `<a class="card" href="https://www.instagram.com/mayapolarbear/">
 <div class="recommend-img" style="background-image:url(image/samoyed.jpg);">
 </div>
 <div class="recommend-content">
@@ -20,7 +14,10 @@ var arr = [
   <h6 class = "ins"> Recommended Instagram account </h6>
 </div>           
 </a>`,
-  `<a class="card" href="https://www.instagram.com/daniele.tokyo/">
+  ],
+  [
+    `red panda`,
+    `<a class="card" href="https://www.instagram.com/daniele.tokyo/">
 <div class="recommend-img" style="background-image:url(image/redpanda-unsplash.jpg);">
 </div>
 <div class="recommend-content">
@@ -32,7 +29,10 @@ var arr = [
 <h6 class = "ins"> Recommended Instagram account </h6>
 </div> 
 </a>`,
-  `<a class="card" href="https://www.instagram.com/quokkadailyshow/">
+  ],
+  [
+    `quokka`,
+    `<a class="card" href="https://www.instagram.com/quokkadailyshow/">
 <div class="recommend-img" style="background-image:url(image/quokka.jpg);">
 </div>
 <div class="recommend-content">
@@ -44,7 +44,10 @@ var arr = [
 <h6 class = "ins"> Recommended Instagram account </h6>
 </div> 
 </a>`,
-  `<a class="card" href="https://www.instagram.com/vanaqua/">
+  ],
+  [
+    `sea Otter`,
+    `<a class="card" href="https://www.instagram.com/vanaqua/">
 <div class="recommend-img" style="background-image:url(image/sea-otter-2.jpg);">
 </div>
 <div class="recommend-content">
@@ -56,7 +59,10 @@ var arr = [
 <h6 class = "ins"> Recommended Instagram account </h6>
 </div> 
 </a>`,
-  `<a class="card" href="https://www.instagram.com/tori_tori_capy/">
+  ],
+  [
+    `capybara`,
+    `<a class="card" href="https://www.instagram.com/tori_tori_capy/">
 <div class="recommend-img" style="background-image:url(image/Capybara.jpg);">
 </div>
 <div class="recommend-content">
@@ -68,7 +74,10 @@ var arr = [
 <h6 class = "ins"> Recommended Instagram account </h6>
 </div> 
 </a>`,
-  `<a class="card" href="https://www.instagram.com/dubs_uw/">
+  ],
+  [
+    `Malamute`,
+    `<a class="card" href="https://www.instagram.com/dubs_uw/">
 <div class="recommend-img" style="background-image:url(image/Malamute.jpg);">
 </div>
 <div class="recommend-content">
@@ -80,12 +89,44 @@ var arr = [
 <h6 class = "ins"> Recommended Instagram account </h6>
 </div> 
 </a>`,
+  ],
 ];
 
-function buildAllCards() {
+function buildOneCard(child, div) {
+  let a = document.createElement("a");
+  a.innerHTML = child;
+
+  div.appendChild(a);
+}
+
+function buildAllCards(currentArr) {
+  let div = document.getElementById("cards");
+  div.innerHTML = "";
   for (i = 0; i < arr.length; i++) {
-    buildOneCard(arr[i]);
+    buildOneCard(currentArr[i][1], div);
   }
 }
 
-buildAllCards();
+var searchInput = document.getElementById("animal-filter");
+//compare the input with the animal list
+function isAnimalFound(animal) {
+  //Get the input
+  var userInput = searchInput.value;
+  console.log(animal[0]);
+  console.log(animal[0].includes(userInput), userInput);
+  if (animal[0].includes(userInput)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//listen when user types in the filed
+searchInput.addEventListener("input", function () {
+  //filter animals
+  var filtered_animals = arr.filter(isAnimalFound);
+  /*console.log(arr); */
+  console.log(filtered_animals);
+  //Update and display the list
+  buildAllCards(filtered_animals);
+});
