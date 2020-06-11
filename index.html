@@ -12,20 +12,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css"
     />
-        <!-- Bootstrap v4.4.1 CSS stylesheet -->
-        <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous"
-      />
+    <!-- Bootstrap v4.4.1 CSS stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
 
     <link rel="stylesheet" href="newstyle.css" />
   </head>
   <body>
     <header>
       <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand col-9" href="https://haoninghsu.github.io/haoningdesign/">What a Fluff ☁️</a>
+        <a
+          class="navbar-brand col-9"
+          href="https://haoninghsu.github.io/haoningdesign/"
+          >What a Fluff ☁️</a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -41,73 +45,71 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="https://haoninghsu.github.io/haoningdesign/"
+              <a
+                class="nav-link"
+                href="https://haoninghsu.github.io/haoningdesign/"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link"
+              <a
+                class="nav-link"
                 href="https://haoninghsu.github.io/haoningdesign/about/about"
                 tabindex="-1"
                 >About</a
               >
             </li>
+          </ul>
         </div>
-  </nav>
+      </nav>
       <h1>Find a Fluff</h1>
       <p>Explore and find a fluffy animal you like the best!</p>
-
-      
     </header>
 
     <main>
-    
-      <div class = "filters col-11" id="filters">
-      <div class = "search col-4">
-      <form>
-        <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            id="animal-filter"
-            placeholder="Type animal name. ex:Samoyed"
-          />
+      <div class="filters col-11" id="filters">
+        <div class="search col-4">
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="animal-filter"
+                placeholder="Type animal name. ex:Samoyed"
+              />
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
 
-    <div class = "filter col-2">
-      <select class="form-control" id="color-select">
-        <option value="none">by Color</option>
-        <option value="white">White</option>
-        <option value="red">Red</option>
-        <option value="brown">Brown</option>
-        <option value="black">Black</option>
+        <div class="filter col-2">
+          <select class="form-control" id="color-select">
+            <option value="none">by Color</option>
+            <option value="white">White</option>
+            <option value="red">Red</option>
+            <option value="brown">Brown</option>
+            <option value="black">Black</option>
+          </select>
+        </div>
 
-      </select>
+        <div class="filter col-2">
+          <select class="form-control" id="fluff-select">
+            <option value="none">by Fluffiness</option>
+            <option value="one">☁️</option>
+            <option value="three">☁️☁️☁️</option>
+            <option value="five">☁️☁️☁️☁️☁️</option>
+          </select>
+        </div>
+
+        <div class="filter col-2">
+          <select class="form-control" id="habitat-select">
+            <option value="none">by Habitat</option>
+            <option value="tropical">Tropical</option>
+            <option value="temperate">Temperate</option>
+            <option value="frigid">Frigid</option>
+          </select>
+        </div>
       </div>
-
-      <div class = "filter col-2">
-      <select class="form-control" id="fluff-select">
-        <option value="none">by Fluffiness</option>
-        <option value="one">☁️</option>
-        <option value="three">☁️☁️☁️</option>
-        <option value="five">☁️☁️☁️☁️☁️</option>
-      </select>
-      </div>
-
-      <div class = "filter col-2">
-        <select class="form-control" id="habitat-select">
-          <option value="none">by Habitat</option>
-          <option value="tropical">Tropical</option>
-          <option value="temperate">Temperate</option>
-          <option value="frigid">Frigid</option>
-        </select>
-      </div>
-
-      </div>
-
 
       <section class="container">
         <div class="recommendation" id="cards">
@@ -192,16 +194,15 @@
             </a>
             -->
         </div>
-        </section>
       </section>
     </main>
-  
+
     <script src="main.js"></script>
   </body>
-  
-  <footer class = "footer">
-    <div class = "container">
+
+  <footer class="footer">
+    <div class="container">
       <span class="text-muted">2020 © Daphne Hsu | Made with 💓 </span>
     </div>
-  
+  </footer>
 </html>
